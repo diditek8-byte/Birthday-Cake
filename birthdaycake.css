@@ -197,10 +197,11 @@ h2 {
     }
     h2 {
         position: relative;
-        left: -150px;
+        right: -150px;
         
     }
     .birthday-cake {
-        margin-left: 50px;
+        position: relative;
+        right: 150px;
     }
 }
