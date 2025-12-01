@@ -193,15 +193,15 @@ h2 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     h2 {
         position: relative;
-        right: -350px;
+        right: -320px;
         
     }
     .birthday-cake {
         position: relative;
-        right: 350px;
+        right: 320px;
     }
 }
