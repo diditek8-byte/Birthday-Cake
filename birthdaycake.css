@@ -17,6 +17,7 @@ body {
 
 h1 {
     font-size: 4rem;
+    margin-left: 90px;
     font-family: cursive;
 }
 
@@ -24,40 +25,24 @@ h2 {
     font-family: cursive;
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 40px;
 }
 
 h1, h2 {
+    position: static;
     margin: 10px 0;
 }
-
-/* ------------------------------
-   PROPER CAKE CENTERING
---------------------------------*/
 .birthday-cake {
     position: relative;
     margin-top: 20px;
-    width: 350px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.holder,
-.shadow,
-.cake {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* ------------------------------
-   HOLDER
---------------------------------*/
 .holder {
+    position: absolute;
     width: 350px;
     height: 20px;
     border-radius: 100px;
     background-color: #212f3c;
+    left: -140px;
     top: 10px;
 }
 
@@ -67,7 +52,7 @@ h1, h2 {
     width: 100px;
     height: 150px;
     background-color: #cacfd2;
-    left: 125px;
+    left: 130px;
     top: 20px;
 }
 
@@ -78,19 +63,18 @@ h1, h2 {
     width: 100px;
     height: 135px;
     border-radius: 30px 30px 0 0;
-    left: 60px;
+    left: 65px;
     top: 20px;
     box-shadow: 125px 0 #8cc1e9;
 }
 
-/* ------------------------------
-   SHADOW
---------------------------------*/
 .shadow {
+    position: absolute;
     width: 350px;
     height: 20px;
     border-radius: 50%;
     top: 170px;
+    left: -135px;
     background-color: rgba(0, 0, 0, 0.095);
     z-index: 1;
 }
@@ -103,18 +87,17 @@ h1, h2 {
     height: 20px;
     border-radius: 20px;
     top: -10px;
-    left: 100px;
+    left: 96px;
 }
 
-/* ------------------------------
-   CAKE BODY
---------------------------------*/
 .cake {
+    position: absolute;
     overflow: hidden;
     width: 275px;
     height: 140px;
     background-color: #f3c8dd;
     top: -130px;
+    left: -101px;
     border-radius: 30px 30px 0 0;
     animation: cake 2s infinite;
 }
@@ -138,9 +121,6 @@ h1, h2 {
     box-shadow: inset 0 10px rgba(0, 0, 0, 0.07);
 }
 
-/* ------------------------------
-   FROSTING
---------------------------------*/
 .frosting {
     position: absolute;
     background-color: #4b1535;
@@ -150,30 +130,19 @@ h1, h2 {
     left: 0;
     z-index: 2;
     border-radius: 50px;
-    box-shadow: 
-        25px 2px #f3c8dd, 
-        50px -10px #4b1535, 
-        75px -5px #f3c8dd, 
-        100px 3px #4b1535, 
-        125px 0 #f3c8dd, 
-        150px -5px #4b1535, 
-        175px 3px #f3c8dd, 
-        200px -5px #4b1535, 
-        225px -10px #f3c8dd, 
-        250px 4px #4b1535;
+    box-shadow: 25px 2px #f3c8dd, 50px -10px #4b1535, 75px -5px #f3c8dd, 
+    100px 3px #4b1535, 125px 0 #f3c8dd, 150px -5px #4b1535, 175px 3px #f3c8dd, 
+    200px -5px #4b1535, 225px -10px #f3c8dd, 250px 4px #4b1535;
     animation: frosting 2s infinite;
 }
 
-/* ------------------------------
-   CANDLE
---------------------------------*/
 .candle {
     position: absolute;
     width: 15px;
     height: 70px;
     background-color: white;
     top: -200px;
-    left: calc(50% - 7.5px);
+    left: 30px;
     box-shadow: inset 0 -10px #41644a;
 }
 
@@ -197,25 +166,20 @@ h1, h2 {
     left: 6px;
 }
 
-/* ------------------------------
-   FLAME
---------------------------------*/
 .flame {
     position: absolute;
     background-color: #f4d03f;
     opacity: 0.9;
     box-shadow: inset 0 -5px 5px #d35400, 5px -5px 20px #fbffa3;
+    background-color: #f4d03f;
     width: 20px;
     height: 30px;
     top: -240px;
     border-radius: 50%;
-    left: calc(50% - 10px);
+    left: 26.5px;
     animation: flame 0.5s infinite;
 }
 
-/* ------------------------------
-   ANIMATIONS
---------------------------------*/
 @keyframes flame {
     from, to {transform: scale(1,1);}
     25% {transform: scale(0.9,1.1);}
@@ -225,18 +189,16 @@ h1, h2 {
 
 @keyframes frosting {
     from, to {transform: scale(1,1);}
-    25% {transform: scale3d(1,0.8,1);}
+    25% {transform: scale3d(1,0.8);}
     50% {transform: scale(1,0.9);}
 }
 
 @keyframes cake {
     from, to {transform: scale(1,1);}
     50% {transform: scale(0.97,1);}
+
 }
 
-/* ------------------------------
-   MOBILE
---------------------------------*/
 @media (max-width: 600px) {
     .center-wrapper {
         transform: scale(0.8);
