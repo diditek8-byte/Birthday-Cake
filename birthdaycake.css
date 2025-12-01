@@ -15,7 +15,7 @@ h1  {
 }
 
 h2 {
-   position: absolute; 
+   position: relative; 
     top: 280px; 
     left: 40px; 
     font-family: cursive; 
