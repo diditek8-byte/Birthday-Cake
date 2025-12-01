@@ -26,7 +26,6 @@ h2 {
     position: relative;
     top: 20px;
     left: 150px;
-    
 }
 
 .holder {
@@ -190,4 +189,16 @@ h2 {
     from, to {transform: scale(1,1);}
     50% {transform: scale(0.97,1)}
 
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        margin-right: 15px;
+    }
+    .birthday-cake {
+        margin-right: 20px;
+    }
 }
