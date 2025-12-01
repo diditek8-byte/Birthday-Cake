@@ -1,0 +1,193 @@
+body {
+    background-color: #8cc1e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    top: -5px;
+    font-size: 4rem;
+    margin-left: 90px;
+    font-family: cursive;
+}
+
+h2 {
+    position: relative;
+    top: 260px;
+    left: 40px;
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.birthday-cake {
+    position: relative;
+    top: 20px;
+    left: 150px;
+    
+}
+
+.holder {
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #212f3c;
+    left: -140px;
+    top: 10px;
+}
+
+.holder:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: #cacfd2;
+    left: 130px;
+    top: 20px;
+}
+
+.holder:after {
+    content: "";
+    position: absolute;
+    background-color: #8cc1e9;
+    width: 100px;
+    height: 135px;
+    border-radius: 30px 30px 0 0;
+    left: 65px;
+    top: 20px;
+    box-shadow: 125px 0 #8cc1e9;
+}
+
+.shadow {
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    border-radius: 50%;
+    top: 170px;
+    left: -135px;
+    background-color: rgba(0, 0, 0, 0.095);
+    z-index: 1;
+}
+
+.shadow:before {
+    content: "";
+    position: absolute;
+    background-color: #cacfd2;
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    top: -10px;
+    left: 96px;
+}
+
+.cake {
+    position: absolute;
+    overflow: hidden;
+    width: 275px;
+    height: 140px;
+    background-color: #f3c8dd;
+    top: -130px;
+    left: -101px;
+    border-radius: 30px 30px 0 0;
+    animation: cake 2s infinite;
+}
+
+.cake:before {
+    content: "";
+    position: absolute;
+    background-color: #7b5d50;
+    width: 275px;
+    height: 15px;
+    top: 75px;
+    box-shadow: 0 30px #7b5d50;
+}
+
+.cake:after {
+    content: "";
+    position: absolute;
+    background-color: #4b1535;
+    width: 275px;
+    height: 40px;
+    box-shadow: inset 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.frosting {
+    position: absolute;
+    background-color: #4b1535;
+    width: 25px;
+    height: 45px;
+    top: 25px;
+    left: 0;
+    z-index: 2;
+    border-radius: 50px;
+    box-shadow: 25px 2px #f3c8dd, 50px -10px #4b1535, 75px -5px #f3c8dd, 
+    100px 3px #4b1535, 125px 0 #f3c8dd, 150px -5px #4b1535, 175px 3px #f3c8dd, 
+    200px -5px #4b1535, 225px -10px #f3c8dd, 250px 4px #4b1535;
+    animation: frosting 2s infinite;
+}
+
+.candle {
+    position: absolute;
+    width: 15px;
+    height: 70px;
+    background-color: white;
+    top: -200px;
+    left: 30px;
+    box-shadow: inset 0 -10px #41644a;
+}
+
+.candle:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #41644a;
+    top: 10px;
+    box-shadow: 0 25px #41644a;
+}
+
+.candle:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: black;
+    top: -15px;
+    left: 6px;
+}
+
+.flame {
+    position: absolute;
+    background-color: #f4d03f;
+    opacity: 0.9;
+    box-shadow: inset 0 -5px 5px #d35400, 5px -5px 20px #fbffa3;
+    background-color: #f4d03f;
+    width: 20px;
+    height: 30px;
+    top: -240px;
+    border-radius: 50%;
+    left: 26.5px;
+    animation: flame 0.5s infinite;
+}
+
+@keyframes flame {
+    from, to {transform: scale(1,1);}
+    25% {transform: scale(0.9,1.1);}
+    50% {transform: scale(1.1,0.9);}
+    75% {transform: scale(0.95,1.05);}
+}
+
+@keyframes frosting {
+    from, to {transform: scale(1,1);}
+    25% {transform: scale3d(1,0.8);}
+    50% {transform: scale(1,0.9);}
+}
+
+@keyframes cake {
+    from, to {transform: scale(1,1);}
+    50% {transform: scale(0.97,1)}
+
+}
