@@ -187,7 +187,7 @@ h2 {
 
 @keyframes cake {
     from, to {transform: scale(1,1);}
-    50% {transform: scale(0.97,1)}
+    50% {transform: scale(0.97,1);}
 
 }
 
@@ -197,11 +197,11 @@ h2 {
     }
     h2 {
         position: relative;
-        right: -150px;
+        right: -350px;
         
     }
     .birthday-cake {
         position: relative;
-        right: 150px;
+        right: 350px;
     }
 }
