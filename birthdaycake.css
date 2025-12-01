@@ -196,9 +196,12 @@ h2 {
         font-size: 2rem;
     }
     h2 {
-        margin-right: 90px;
+        position: relative;
+        right: 15px;
+        
     }
     .birthday-cake {
-        margin-right: 20px;
+        position: relative;
+        right:  15px;
     }
 }
